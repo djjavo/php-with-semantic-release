@@ -1,5 +1,4 @@
 {
-    "name": "php-with-semantic-release",
     "version": "0.0.0-development",
     "private": true,
     "scripts": {
@@ -17,5 +16,12 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "semantic-release": "^19.0.2"
+    },
+    "release": {
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator",
+            "@semantic-release/github"
+        ]
     }
 }
